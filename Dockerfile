@@ -8,6 +8,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+RUN if [ -f ../requirements.txt ]; then pip install -r ../requirements.txt; fi
 
 ENTRYPOINT ["python3", "main.py"]
